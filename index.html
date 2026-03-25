@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roki Seydi — AI Safety, Global Health, Biosecurity</title>
-  <meta name="description" content="Roki Seydi builds evaluation infrastructure for AI safety in global health. Author of the cultural confabulation framework and the Open Global Health & Biosecurity AI Evaluations.">
+  <meta name="description" content="Roki Seydi builds evaluation infrastructure for AI safety in global health and biosecurity. Author of the cultural confabulation framework and the Open Global Health & Biosecurity AI Evaluations.">
   <meta name="author" content="Roki Seydi">
 
   <!-- Open Graph -->
@@ -30,14 +30,12 @@
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#hero" class="nav-name">Roki Seydi</a>
+      <a href="index.html" class="nav-name">Roki Seydi</a>
       <div class="nav-links">
         <a href="#gap">The Gap</a>
-        <a href="#building">Work</a>
-        <a href="#research">Research</a>
-        <a href="#writing">Writing</a>
-        <a href="#background">Background</a>
-        <a href="#speaking">Speaking</a>
+        <a href="results.html">Results</a>
+        <a href="research.html">Research</a>
+        <a href="background.html">Background</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -54,14 +52,14 @@
         </div>
         <div class="hero-content">
           <h1 class="hero-name">Roki Seydi</h1>
-          <p class="hero-tagline">AI Safety Infrastructure &middot; Technical AI Governance &middot; Global Health</p>
+          <p class="hero-tagline">AI Safety Infrastructure &middot; Technical AI Governance &middot; Global Health &middot; Biosecurity</p>
         </div>
       </div>
       <p class="hero-statement">
-        I build evaluation infrastructure for failure modes in AI systems that only appear in real-world contexts.
+        I build evaluation infrastructure for failure modes in AI systems that only appear when context matters.
       </p>
       <p class="hero-statement hero-statement--secondary">
-        Current work focuses on <em>cultural confabulation</em> &mdash; cases where models produce medically plausible reasoning that is contextually wrong for the person it claims to help.
+        Current work measures <em>contextual validity</em> &mdash; whether frontier models produce reasoning that is actually appropriate for the person, setting, and system they claim to help.
       </p>
     </div>
   </section>
@@ -86,327 +84,34 @@
     </div>
   </section>
 
-  <!-- 3. What I'm Building -->
-  <section class="section section--data" id="building">
-    <div class="container fade-in">
-      <h2 class="section-title">What I'm Building</h2>
-      <p class="work-subtitle">An evaluation layer for context-sensitive reasoning in AI systems.</p>
-      <ul class="build-features">
-        <li>Built on <a href="https://inspect.aisi.org.uk/" target="_blank" rel="noopener">UK AISI Inspect Evals</a></li>
-        <li>Open, reproducible evaluation framework</li>
-        <li>Designed for deployment conditions, not benchmark conditions</li>
-      </ul>
-      <div class="build-focus">
-        <p class="build-focus-label">Initial focus:</p>
-        <ul class="build-focus-list">
-          <li>Global health and culturally complex care settings</li>
-          <li>Community health worker environments</li>
-          <li>Systems where context determines outcome</li>
-        </ul>
-      </div>
-      <p class="holding-health-note">This work is being developed through <a href="https://holdinghealth.org" target="_blank" rel="noopener">Holding Health</a> as a research and infrastructure programme.</p>
-    </div>
-  </section>
-
-  <!-- 4. Proof of Gap -->
-  <section class="section section--data" id="proof">
-    <div class="container fade-in">
-      <h2 class="section-title">Proof of Gap</h2>
-      <p class="proof-intro">Early evaluations show a consistent failure pattern: models demonstrate latent capacity for correct reasoning, but fail to deploy it under realistic conditions.</p>
-      <p class="proof-intro">Minimal interpretive scaffolding &mdash; without adding new knowledge &mdash; produces significant performance gains. This indicates: <strong>the capability exists, but the evaluation paradigm fails to elicit it.</strong></p>
-
-      <!-- Claude Row -->
-      <div class="gap-row">
-        <div class="gap-model">
-          <span class="gap-model-name">Claude Sonnet 4</span>
-        </div>
-        <div class="gap-scores">
-          <div class="gap-condition gap-condition--fail">
-            <span class="gap-label">Unscaffolded</span>
-            <span class="gap-score">6.3<span class="gap-total">/18</span></span>
-            <span class="gap-badge gap-badge--fail">FAIL</span>
-            <span class="gap-meta">SD=1.58, n=9</span>
-          </div>
-          <div class="gap-arrow">&rarr;</div>
-          <div class="gap-condition gap-condition--pass">
-            <span class="gap-label">Scaffolded</span>
-            <span class="gap-score">15.0<span class="gap-total">/18</span></span>
-            <span class="gap-badge gap-badge--pass">PASS</span>
-            <span class="gap-meta">SD=2.18, n=9</span>
-          </div>
-          <div class="gap-delta">
-            <span class="gap-delta-label">Gap</span>
-            <span class="gap-delta-value">+8.7</span>
-            <span class="gap-ci">95% CI [6.9, 10.4]</span>
+  <!-- 3. Link Cards -->
+  <section class="section" id="explore">
+    <div class="container container--narrow fade-in">
+      <h2 class="section-title">Explore</h2>
+      <div class="cards-grid">
+        <a href="results.html" class="link-card">
+          <h3 class="link-card-title">Open Source Evaluations</h3>
+          <p class="link-card-desc">Framework overview, domain statuses, and full results across D1, D2, and D3 for Claude, GPT-4o, and Gemini.</p>
+          <span class="link-card-arrow">&rarr;</span>
+        </a>
+        <a href="research.html" class="link-card">
+          <h3 class="link-card-title">Research &amp; Writing</h3>
+          <p class="link-card-desc">Papers on cultural confabulation, the auditor's blindspot, and dual-use governance reasoning.</p>
+          <span class="link-card-arrow">&rarr;</span>
+        </a>
+        <a href="background.html" class="link-card">
+          <h3 class="link-card-title">Background</h3>
+          <p class="link-card-desc">Narrative, credentials, speaking engagements, and collaborations.</p>
+          <span class="link-card-arrow">&rarr;</span>
+        </a>
+        <div class="link-card link-card--contact">
+          <h3 class="link-card-title">Contact</h3>
+          <div class="contact-links">
+            <a href="mailto:roki@rokiseydi.com" class="contact-item">roki@rokiseydi.com</a>
+            <a href="https://github.com/rokiseydi" target="_blank" rel="noopener" class="contact-item">GitHub</a>
+            <a href="https://www.linkedin.com/in/rokiseydi" target="_blank" rel="noopener" class="contact-item">LinkedIn</a>
           </div>
         </div>
-      </div>
-
-      <!-- GPT-4o Row -->
-      <div class="gap-row">
-        <div class="gap-model">
-          <span class="gap-model-name">GPT-4o</span>
-        </div>
-        <div class="gap-scores">
-          <div class="gap-condition gap-condition--critical">
-            <span class="gap-label">Unscaffolded</span>
-            <span class="gap-score">3.9<span class="gap-total">/18</span></span>
-            <span class="gap-badge gap-badge--fail">FAIL</span>
-            <span class="gap-meta">SD=0.93, n=9</span>
-          </div>
-          <div class="gap-arrow">&rarr;</div>
-          <div class="gap-condition gap-condition--fail">
-            <span class="gap-label">Scaffolded</span>
-            <span class="gap-score">6.4<span class="gap-total">/18</span></span>
-            <span class="gap-badge gap-badge--fail">FAIL</span>
-            <span class="gap-meta">SD=1.42, n=9</span>
-          </div>
-          <div class="gap-delta">
-            <span class="gap-delta-label">Gap</span>
-            <span class="gap-delta-value">+2.6</span>
-            <span class="gap-ci">95% CI [1.4, 3.7]</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Intent Recognition Callout -->
-      <div class="callout">
-        <h4 class="callout-title">Sharpest Discriminator: Intent Recognition</h4>
-        <p>Claude identifies the person's actual intent <span class="mono highlight-amber">0.22/3</span> without scaffolding and <span class="mono highlight-amber">3.00/3</span> with it &mdash; zero variance, perfect ceiling. The model possesses complete intent recognition capacity but deploys it <strong>0% of the time</strong> under realistic conditions and <strong>100% of the time</strong> when told to look for it.</p>
-      </div>
-
-      <!-- Six-Dimension Table -->
-      <div class="dimension-table-wrap">
-        <h3 class="dimension-table-title">Six-Dimension Rubric (Multi-Epoch Means)</h3>
-        <div class="table-scroll">
-          <table class="dimension-table">
-            <thead>
-              <tr>
-                <th>Dimension</th>
-                <th>Failure Mode</th>
-                <th>Claude (U)</th>
-                <th>Claude (S)</th>
-                <th>Claude &Delta;</th>
-                <th>GPT-4o (U)</th>
-                <th>GPT-4o (S)</th>
-                <th>GPT-4o &Delta;</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Narrative Arc</td>
-                <td class="dim-failure">Temporal flattening</td>
-                <td>1.67</td>
-                <td>2.44</td>
-                <td class="dim-delta">+0.78</td>
-                <td>0.22</td>
-                <td>1.22</td>
-                <td class="dim-delta">+1.00</td>
-              </tr>
-              <tr>
-                <td>Institutional Reflex</td>
-                <td class="dim-failure">Default-to-referral</td>
-                <td>0.56</td>
-                <td>2.78</td>
-                <td class="dim-delta dim-delta--large">+2.22</td>
-                <td>0.44</td>
-                <td>0.56</td>
-                <td class="dim-delta">+0.11</td>
-              </tr>
-              <tr>
-                <td>Intent Recognition</td>
-                <td class="dim-failure">Procedural care</td>
-                <td>0.22</td>
-                <td>3.00</td>
-                <td class="dim-delta dim-delta--large">+2.78</td>
-                <td>0.11</td>
-                <td>0.56</td>
-                <td class="dim-delta">+0.44</td>
-              </tr>
-              <tr>
-                <td>Compliance Framing</td>
-                <td class="dim-failure">Blame-shifting</td>
-                <td>1.89</td>
-                <td>2.89</td>
-                <td class="dim-delta">+1.00</td>
-                <td>1.11</td>
-                <td>2.11</td>
-                <td class="dim-delta">+1.00</td>
-              </tr>
-              <tr>
-                <td>Register Respect</td>
-                <td class="dim-failure">Role collapse</td>
-                <td>0.89</td>
-                <td>1.78</td>
-                <td class="dim-delta">+0.89</td>
-                <td class="zero-var">1.00</td>
-                <td class="zero-var">1.00</td>
-                <td class="dim-delta dim-delta--zero">0.00</td>
-              </tr>
-              <tr>
-                <td>Contextual Proportionality</td>
-                <td class="dim-failure">Over-medicalization</td>
-                <td>1.11</td>
-                <td>2.11</td>
-                <td class="dim-delta">+1.00</td>
-                <td class="zero-var">1.00</td>
-                <td class="zero-var">1.00</td>
-                <td class="dim-delta dim-delta--zero">0.00</td>
-              </tr>
-              <tr class="total-row">
-                <td colspan="2"><strong>Total</strong></td>
-                <td><strong>6.33</strong></td>
-                <td><strong>15.00</strong></td>
-                <td class="dim-delta"><strong>+8.67</strong></td>
-                <td><strong>3.89</strong></td>
-                <td><strong>6.44</strong></td>
-                <td class="dim-delta"><strong>+2.56</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="table-note">Scale: 0&ndash;3 per dimension (18 total). Pass threshold: 11/18. U = Unscaffolded, S = Scaffolded. <span class="zero-var-note">Shaded cells</span> = zero variance across all runs.</p>
-      </div>
-
-      <div class="work-links">
-        <a href="https://github.com/rokiseydi/open-global-health-biosecurity-ai-evals" target="_blank" rel="noopener" class="btn btn--primary">View on GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. Current Programme -->
-  <section class="section" id="programme">
-    <div class="container container--narrow fade-in">
-      <h2 class="section-title">Current Programme</h2>
-      <ol class="domain-list">
-        <li>
-          <span class="domain-status domain-status--active">Active</span>
-          <div class="domain-content">
-            <strong>Domain 1 &mdash; Cultural &amp; Contextual Validity</strong>
-            <p>Active evaluation development and dataset expansion</p>
-          </div>
-        </li>
-        <li>
-          <span class="domain-status domain-status--dev">In Development</span>
-          <div class="domain-content">
-            <strong>Domain 2 &mdash; CHW Competency &amp; Task-Shifting</strong>
-            <p>In development with global health collaborators</p>
-          </div>
-        </li>
-        <li>
-          <span class="domain-status domain-status--early">Early Stage</span>
-          <div class="domain-content">
-            <strong>Domain 3 &mdash; Fragile Health System Reasoning</strong>
-            <p>Early-stage design</p>
-          </div>
-        </li>
-        <li>
-          <span class="domain-status domain-status--exploratory">Exploratory</span>
-          <div class="domain-content">
-            <strong>Domain 4 &mdash; Biosecurity &amp; Dual-Use Governance</strong>
-            <p>Exploratory work with research partners</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- 6. Research -->
-  <section class="section" id="research">
-    <div class="container container--narrow fade-in">
-      <h2 class="section-title">Research</h2>
-      <div class="papers-list">
-        <article class="paper">
-          <h3 class="paper-title">Cultural Confabulation</h3>
-          <p class="paper-desc">Defines a failure mode where models produce coherent but contextually invalid reasoning in real-world settings.</p>
-          <span class="paper-status paper-status--working">Working Paper, 2026</span>
-        </article>
-        <article class="paper">
-          <h3 class="paper-title">The Auditor's Blindspot</h3>
-          <p class="paper-desc">Identifies structural issues in model-as-judge evaluation pipelines.</p>
-          <span class="paper-status paper-status--working">Working Paper, 2026</span>
-        </article>
-        <article class="paper">
-          <h3 class="paper-title">Contextual Validity Evaluations</h3>
-          <p class="paper-desc">Multi-epoch empirical validation across domains.</p>
-          <span class="paper-status paper-status--prep">In Progress</span>
-        </article>
-        <article class="paper">
-          <h3 class="paper-title">Governing the Boundary: An Evaluation Framework for Dual-Use Governance Reasoning in Large Language Models</h3>
-          <p class="paper-desc">Current biosecurity evaluations test whether AI systems are dangerous. This framework tests whether AI systems understand that they could be dangerous &mdash; and reason accordingly.</p>
-          <span class="paper-status paper-status--upcoming">Upcoming &middot; bioRxiv</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Writing -->
-  <section class="section" id="writing">
-    <div class="container container--narrow fade-in">
-      <h2 class="section-title">Writing</h2>
-      <div class="writing-list">
-        <article class="writing-item">
-          <a href="https://ai.plainenglish.io/ai-doesnt-hallucinate-my-mother-s-culture-it-rewrites-it-4e87fc963337" target="_blank" rel="noopener" class="writing-link">
-            <h3 class="writing-title">AI Doesn't Hallucinate My Mother's Culture. It Rewrites It.</h3>
-            <span class="writing-meta">Artificial Intelligence in Plain English &middot; December 2025</span>
-          </a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8. Background -->
-  <section class="section" id="background">
-    <div class="container container--narrow fade-in">
-      <h2 class="section-title">Background</h2>
-      <div class="background-narrative">
-        <p>My work sits at the intersection of medical anthropology, public health, and systems engineering.</p>
-        <p>I started with ethnographic research on idioms of distress at King's College London, studying how people navigate health systems in practice.</p>
-        <p>I then trained in global public health at Imperial College London, focusing on structural gaps in care delivery.</p>
-        <p>In parallel, I've built production systems used by millions:</p>
-        <ul class="background-builds">
-          <li>Founding engineer at <strong>tell.money</strong> (5M users)</li>
-          <li>Founding engineer at <strong>Good Boost</strong> (20K+ patients)</li>
-        </ul>
-        <p class="background-arc">This work brings those threads together: fieldwork &rarr; system design &rarr; evaluation infrastructure.</p>
-      </div>
-
-      <div class="credentials">
-        <div class="credentials-group">
-          <h4>Education</h4>
-          <ul>
-            <li><strong>Imperial College London</strong> &mdash; Master of Global Public Health</li>
-            <li><strong>King's College London</strong> &mdash; BA Global Health and Social Medicine</li>
-          </ul>
-        </div>
-      </div>
-
-      <a href="assets/Roki_Seydi_CV.pdf" target="_blank" rel="noopener" class="btn btn--secondary">Download CV (PDF)</a>
-    </div>
-  </section>
-
-  <!-- 8. Speaking & Collaborations -->
-  <section class="section" id="speaking">
-    <div class="container container--narrow fade-in">
-      <h2 class="section-title">Speaking &amp; Collaborations</h2>
-      <ul class="collab-list">
-        <li>Technical AI Safety Conference (Oxford)</li>
-        <li>Skoll World Forum</li>
-        <li>King's College London</li>
-        <li>Community Health Impact Coalition (CHIC)</li>
-        <li>The Alan Turing Institute</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 9. Contact -->
-  <section class="section section--contact" id="contact">
-    <div class="container container--narrow fade-in">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-links">
-        <a href="mailto:roki@rokiseydi.com" class="contact-item">roki@rokiseydi.com</a>
-        <a href="https://github.com/rokiseydi" target="_blank" rel="noopener" class="contact-item">GitHub</a>
-        <a href="https://holdinghealth.org" target="_blank" rel="noopener" class="contact-item">Holding Health</a>
       </div>
     </div>
   </section>

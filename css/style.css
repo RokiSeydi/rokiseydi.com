@@ -1191,3 +1191,112 @@ body {
     font-size: 0.7rem;
   }
 }
+
+/* ==========================================================================
+   Link Cards (Landing Page)
+   ========================================================================== */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.link-card {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px 24px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 12px rgba(13, 82, 87, 0.08);
+}
+
+.link-card-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.link-card-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.link-card-arrow {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Contact card variant — not a link */
+.link-card--contact {
+  cursor: default;
+}
+
+.link-card--contact:hover {
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.link-card--contact .contact-links {
+  margin-top: 12px;
+}
+
+/* ==========================================================================
+   Detail Page Layout
+   ========================================================================== */
+
+.detail-page .section:first-of-type {
+  padding-top: calc(var(--nav-height) + 60px);
+}
+
+/* Domain results sections on results page */
+.domain-results {
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+}
+
+.domain-results:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.domain-results-header {
+  margin-bottom: 24px;
+}
+
+.domain-results-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.domain-results-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 640px;
+}
+
+/* ==========================================================================
+   Responsive: Cards
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
