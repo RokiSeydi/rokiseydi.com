@@ -102,8 +102,8 @@
           <p class="domain-results-subtitle">Tests whether models produce reasoning that is contextually valid &mdash; not just medically plausible &mdash; in culturally complex care settings. 6 dimensions, 18 points. Pass threshold: 11/18.</p>
         </div>
 
-        <p class="proof-intro">Early evaluations show a consistent failure pattern: models demonstrate latent capacity for correct reasoning, but fail to deploy it under realistic conditions.</p>
-        <p class="proof-intro">Minimal interpretive scaffolding &mdash; without adding new knowledge &mdash; produces significant performance gains. This indicates: <strong>the capability exists, but the evaluation paradigm fails to elicit it.</strong></p>
+        <p class="proof-intro">Multi-epoch evaluations across 4 cases (3 English, 1 non-standard Italian) and 3 independent epochs per model (N=72 observations) show a consistent failure pattern: models demonstrate latent capacity for correct reasoning, but fail to deploy it under realistic conditions.</p>
+        <p class="proof-intro">Minimal interpretive scaffolding &mdash; without adding new knowledge &mdash; produces statistically significant performance gains (p&lt;0.01, Cohen's d 0.95&ndash;1.82). This indicates: <strong>the capability exists, but the evaluation paradigm fails to elicit it.</strong></p>
 
         <!-- Claude Row -->
         <div class="gap-row">
@@ -111,23 +111,23 @@
             <span class="gap-model-name">Claude Sonnet 4</span>
           </div>
           <div class="gap-scores">
-            <div class="gap-condition gap-condition--fail">
+            <div class="gap-condition gap-condition--pass">
               <span class="gap-label">Unscaffolded</span>
-              <span class="gap-score">6.3<span class="gap-total">/18</span></span>
-              <span class="gap-badge gap-badge--fail">FAIL</span>
-              <span class="gap-meta">SD=1.58, n=9</span>
+              <span class="gap-score">12.17<span class="gap-total">/18</span></span>
+              <span class="gap-badge gap-badge--pass">75% pass</span>
+              <span class="gap-meta">CV 2.3%, n=12</span>
             </div>
             <div class="gap-arrow">&rarr;</div>
             <div class="gap-condition gap-condition--pass">
               <span class="gap-label">Scaffolded</span>
-              <span class="gap-score">15.0<span class="gap-total">/18</span></span>
-              <span class="gap-badge gap-badge--pass">PASS</span>
-              <span class="gap-meta">SD=2.18, n=9</span>
+              <span class="gap-score">16.58<span class="gap-total">/18</span></span>
+              <span class="gap-badge gap-badge--pass">100% pass</span>
+              <span class="gap-meta">n=12</span>
             </div>
             <div class="gap-delta">
               <span class="gap-delta-label">Gap</span>
-              <span class="gap-delta-value">+8.7</span>
-              <span class="gap-ci">95% CI [6.9, 10.4]</span>
+              <span class="gap-delta-value">+4.42</span>
+              <span class="gap-ci">p&lt;0.001, d=1.82</span>
             </div>
           </div>
         </div>
@@ -138,21 +138,23 @@
             <span class="gap-model-name">Gemini 2.5 Pro</span>
           </div>
           <div class="gap-scores">
-            <div class="gap-condition gap-condition--fail">
+            <div class="gap-condition gap-condition--pass">
               <span class="gap-label">Unscaffolded</span>
-              <span class="gap-score">6.3<span class="gap-total">/18</span></span>
-              <span class="gap-badge gap-badge--fail">FAIL</span>
+              <span class="gap-score">13.50<span class="gap-total">/18</span></span>
+              <span class="gap-badge gap-badge--pass">75% pass</span>
+              <span class="gap-meta">CV 3.2%, n=12</span>
             </div>
             <div class="gap-arrow">&rarr;</div>
             <div class="gap-condition gap-condition--pass">
               <span class="gap-label">Scaffolded</span>
-              <span class="gap-score">13.3<span class="gap-total">/18</span></span>
-              <span class="gap-badge gap-badge--pass">PASS</span>
+              <span class="gap-score">17.17<span class="gap-total">/18</span></span>
+              <span class="gap-badge gap-badge--pass">100% pass</span>
+              <span class="gap-meta">n=12</span>
             </div>
             <div class="gap-delta">
               <span class="gap-delta-label">Gap</span>
-              <span class="gap-delta-value">+7.0</span>
-              <span class="gap-ci">95% CI [3.9, 10.1]</span>
+              <span class="gap-delta-value">+3.67</span>
+              <span class="gap-ci">p&lt;0.01, d=0.95</span>
             </div>
           </div>
         </div>
@@ -165,21 +167,21 @@
           <div class="gap-scores">
             <div class="gap-condition gap-condition--critical">
               <span class="gap-label">Unscaffolded</span>
-              <span class="gap-score">3.9<span class="gap-total">/18</span></span>
-              <span class="gap-badge gap-badge--fail">FAIL</span>
-              <span class="gap-meta">SD=0.93, n=9</span>
+              <span class="gap-score">6.00<span class="gap-total">/18</span></span>
+              <span class="gap-badge gap-badge--fail">0% pass</span>
+              <span class="gap-meta">CV 10.8%, n=12</span>
             </div>
             <div class="gap-arrow">&rarr;</div>
             <div class="gap-condition gap-condition--fail">
               <span class="gap-label">Scaffolded</span>
-              <span class="gap-score">6.4<span class="gap-total">/18</span></span>
-              <span class="gap-badge gap-badge--fail">FAIL</span>
-              <span class="gap-meta">SD=1.42, n=9</span>
+              <span class="gap-score">10.33<span class="gap-total">/18</span></span>
+              <span class="gap-badge gap-badge--fail">50% pass</span>
+              <span class="gap-meta">n=12</span>
             </div>
             <div class="gap-delta">
               <span class="gap-delta-label">Gap</span>
-              <span class="gap-delta-value">+2.6</span>
-              <span class="gap-ci">95% CI [1.4, 3.7]</span>
+              <span class="gap-delta-value">+4.33</span>
+              <span class="gap-ci">p&lt;0.001, d=1.54</span>
             </div>
           </div>
         </div>
@@ -187,12 +189,18 @@
         <!-- Intent Recognition Callout -->
         <div class="callout">
           <h4 class="callout-title">Sharpest Discriminator: Intent Recognition</h4>
-          <p>Claude identifies the person's actual intent <span class="mono highlight-amber">0.22/3</span> without scaffolding and <span class="mono highlight-amber">3.00/3</span> with it &mdash; zero variance, perfect ceiling. The model possesses complete intent recognition capacity but deploys it <strong>0% of the time</strong> under realistic conditions and <strong>100% of the time</strong> when told to look for it.</p>
+          <p>On the Italian case (D1_IT_001), Claude identifies the person's actual intent <span class="mono highlight-amber">0.00/3</span> without scaffolding and <span class="mono highlight-amber">3.00/3</span> with it &mdash; zero variance in both conditions across all epochs. The model possesses complete intent recognition capacity but deploys it <strong>0% of the time</strong> under realistic conditions and <strong>100% of the time</strong> when told to look for it. This is deterministic, not stochastic.</p>
+        </div>
+
+        <!-- Hardest Case Callout -->
+        <div class="callout">
+          <h4 class="callout-title">D1_IT_001: Universal Failure Point</h4>
+          <p>The Italian-language case (non-standard oral register) produces <strong>0/9 unscaffolded passes</strong> across all three models and all epochs &mdash; the only case where this occurs. English cases confirm the gap is structural, not linguistic: Claude and Gemini pass all 9 English case-epochs unscaffolded. Register accessibility modulates severity (Gemini: English mean 16.11 vs Italian mean 5.67).</p>
         </div>
 
         <!-- Six-Dimension Table -->
         <div class="dimension-table-wrap">
-          <h3 class="dimension-table-title">Six-Dimension Rubric (Multi-Epoch Means)</h3>
+          <h3 class="dimension-table-title">Six-Dimension Rubric &mdash; D1_IT_001 Italian Case (Multi-Epoch Means)</h3>
           <div class="table-scroll">
             <table class="dimension-table">
               <thead>
@@ -280,7 +288,7 @@
               </tbody>
             </table>
           </div>
-          <p class="table-note">Scale: 0&ndash;3 per dimension (18 total). Pass threshold: 11/18. U = Unscaffolded, S = Scaffolded. <span class="zero-var-note">Shaded cells</span> = zero variance across all runs.</p>
+          <p class="table-note">Scale: 0&ndash;3 per dimension (18 total). Pass threshold: 11/18. U = Unscaffolded, S = Scaffolded. <span class="zero-var-note">Shaded cells</span> = zero variance across all runs. Dimension breakdown shown for IT_001 (hardest case; all models fail unscaffolded).</p>
         </div>
       </div>
     </div>
@@ -499,12 +507,12 @@
                 <tr>
                   <td>D1 &mdash; Cultural Validity</td>
                   <td>18</td>
-                  <td class="dim-delta dim-delta--large"><strong>+8.0</strong></td>
-                  <td>[5.7, 10.3]</td>
-                  <td class="dim-delta dim-delta--large"><strong>+7.0</strong></td>
-                  <td>[3.9, 10.1]</td>
-                  <td class="dim-delta">+2.3</td>
-                  <td>[0.9, 3.8]</td>
+                  <td class="dim-delta dim-delta--large"><strong>+4.42</strong></td>
+                  <td>d=1.82</td>
+                  <td class="dim-delta dim-delta--large"><strong>+3.67</strong></td>
+                  <td>d=0.95</td>
+                  <td class="dim-delta dim-delta--large"><strong>+4.33</strong></td>
+                  <td>d=1.54</td>
                 </tr>
                 <tr>
                   <td>D2 &mdash; CHW Competency</td>
@@ -551,50 +559,50 @@
                 <tr>
                   <td>Claude Sonnet 4</td>
                   <td>Unscaffolded</td>
-                  <td>0/3</td>
+                  <td>9/12</td>
                   <td>6/12</td>
                   <td>1/12</td>
-                  <td><strong>7/27 (26%)</strong></td>
+                  <td><strong>16/36 (44%)</strong></td>
                 </tr>
                 <tr>
                   <td>Claude Sonnet 4</td>
                   <td>Scaffolded</td>
-                  <td>3/3</td>
+                  <td>12/12</td>
                   <td>9/12</td>
                   <td>9/12</td>
-                  <td><strong>21/27 (78%)</strong></td>
+                  <td><strong>30/36 (83%)</strong></td>
                 </tr>
                 <tr>
                   <td>Gemini 2.5 Pro</td>
                   <td>Unscaffolded</td>
-                  <td>0/3</td>
+                  <td>9/12</td>
                   <td>5/12</td>
                   <td>3/12</td>
-                  <td><strong>8/27 (30%)</strong></td>
+                  <td><strong>17/36 (47%)</strong></td>
                 </tr>
                 <tr>
                   <td>Gemini 2.5 Pro</td>
                   <td>Scaffolded</td>
-                  <td>3/3</td>
+                  <td>12/12</td>
                   <td>9/12</td>
                   <td>9/12</td>
-                  <td><strong>21/27 (78%)</strong></td>
+                  <td><strong>30/36 (83%)</strong></td>
                 </tr>
                 <tr>
                   <td>GPT-4o</td>
                   <td>Unscaffolded</td>
-                  <td>0/3</td>
+                  <td>0/12</td>
                   <td>0/12</td>
                   <td>1/12</td>
-                  <td><strong>1/27 (4%)</strong></td>
+                  <td><strong>1/36 (3%)</strong></td>
                 </tr>
                 <tr>
                   <td>GPT-4o</td>
                   <td>Scaffolded</td>
-                  <td>0/3</td>
+                  <td>6/12</td>
                   <td>0/12</td>
                   <td>4/12</td>
-                  <td><strong>4/27 (15%)</strong></td>
+                  <td><strong>10/36 (28%)</strong></td>
                 </tr>
               </tbody>
             </table>
